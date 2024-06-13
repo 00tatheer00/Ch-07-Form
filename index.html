@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form method="post">
+        <label for="its-username`">
+            Username: <input type="text" name="its-username" maxlength="10" placeholder="Your Username">
+        </label>
+        <br><br>
+        <label for="its-password">
+            Password: <input type="password" name="its-password" maxlength="10" placeholder="Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        </label>
+        <br> <br>
+
+        <label for="gender">
+            Gender: <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="rather">Rather not to say
+        </label>
+<br> <br>
+        <label for="fav-city">
+            What is your dream to go: <br> <br>
+            <input type="checkbox" name="fav-city" value="peshawar">Peshawar
+            <input type="checkbox" name="fav-city" value="islamabad">Islamabad
+            <input type="checkbox" name="fav-city" value="lahore">Lahore
+            <input type="checkbox" name="fav-city" value="karachi">Karachi
+        </label>
+       
+        <br><br> <input type="submit">
+    </form>
+</body>
+
+</html>
